@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <script src="./jquery.js"></script>
+        <script src="./underscore-min.js"></script>
+        <script src="./backbone.js"></script>
+    </head>
+    <body>
+        <button class="refresh">Refresh</button>
+        <div class="list-wrapper"></div>
+    </body>
+    <script type="text/template" id="listItem">
+        <div><%= id %> is <%= state %></div>
+    </script>
+    <script src="./app.js"></script>
+
+    <script>
+        $(function() {
+            replacetest.test = new replacetest.app();
+            replacetest.test.render();
+        });
+    </script>
+</html>
